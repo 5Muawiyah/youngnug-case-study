@@ -1,6 +1,6 @@
 # YoungNug: architecture case study
 
-A written case study of **[youngnug.com](https://youngnug.com)**, a UK job-application platform I co-founded and lead the development of.
+A written case study of **[youngnug.com](https://youngnug.com)**, a UK job-application platform whose development I lead and which I co-founded.
 
 The product source is private. This repository explains how the system is put together and why, at the level a technical interviewer or a hiring manager would want. No code, credentials, infrastructure detail or user data appears here, by design.
 
@@ -63,7 +63,7 @@ Built and live. Billing is proven end to end in test mode; the live key has not 
 
 ## My role
 
-Co-founder and lead developer. Day to day the work is system design for new features and building the security layer, alongside general implementation.
+Lead developer and co-founder. Day to day the work is system design for new features and building the security layer, alongside general implementation.
 
 ---
 
