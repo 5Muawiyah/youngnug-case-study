@@ -17,7 +17,7 @@ A UK student applying for graduate schemes, placements and apprenticeships repea
 3. **Draft.** A tailored, ATS-safe CV and cover letter are generated for one specific advert.
 4. **Track.** Applications move through a pipeline the candidate can see.
 
-A companion browser extension captures adverts and fills forms in the user's own browser. It is built to stop before submitting, and it does not bypass a login or a captcha.
+A companion browser extension captures adverts and fills forms in the user's own browser. It is built to stop before submitting, and it does not bypass a login or a captcha. The extension is open source: its code, tests and the analysis behind it are published at [5Muawiyah/youngnug-companion](https://github.com/5Muawiyah/youngnug-companion). The platform it talks to is not.
 
 ## Shape of the system
 
@@ -27,7 +27,7 @@ A companion browser extension captures adverts and fills forms in the user's own
 | Engine | Ranking, scoring and document generation, as plain Python | Testable with no web server and no browser, which is where most of the test suite lives |
 | API | FastAPI over SQLAlchemy, with versioned migrations | The engine has no idea it is being served over HTTP |
 | Frontend | React and TypeScript | Talks to the API and nothing else |
-| Companion | Chrome extension, Manifest V3 | Runs in the user's own browser and holds no server credentials |
+| Companion | Chrome extension, Manifest V3 ([public repository](https://github.com/5Muawiyah/youngnug-companion)) | Runs in the user's own browser and holds no server credentials |
 
 The rule underneath the table: the part that makes decisions is the part with no dependencies. Scoring and document generation are pure functions over data, so they can be tested exhaustively without standing anything up.
 
@@ -67,4 +67,4 @@ Lead developer and co-founder. Day to day the work is system design for new feat
 
 ---
 
-*This repository is documentation only. YoungNug's source code is proprietary and is not published here.*
+*This repository is documentation only. YoungNug's platform source code is proprietary and is not published here; the browser extension is published separately under Apache-2.0.*
